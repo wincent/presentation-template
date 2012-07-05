@@ -7,7 +7,9 @@ Includes:
 
 Usage:
 
-  - run the build script in the highlight submodule to produce
-    highlight.pack.js; eg:
+  # make sure the prerequisites are in place
+  git submodule update --init
+  bundle
 
-      cd highlight && tools/build.py
+  # edit the index.haml file to taste, then build
+  bundle exec rake
