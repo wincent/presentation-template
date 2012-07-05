@@ -1,0 +1,57 @@
+<!doctype html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Presentation title
+    %meta{:content => "Greg Hurrell", :name => "author"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "reveal/css/reset.css", :rel => "stylesheet"}/
+    %link{:href => "reveal/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "highlight/src/styles/solarized_dark.css", :rel => "stylesheet"}/
+    / overrides for default reveal styles
+    :css
+      #reveal pre {
+        font-size: 24px;
+      }
+  %body
+    .reveal
+      .slides
+
+        %section
+          %h1 Presentation title
+
+        %section
+          %h2 Slide title
+          %ul
+            %li.fragment
+              A bullet point
+            %li.fragment
+              Another bullet point
+              %pre.fragment
+                %code.language-ruby{:contenteditable => ""}
+                  :preserve
+                    # this is Ruby code
+                    &lt;%= @cause.name %&gt;
+            %li.fragment
+              Another bullet point
+
+      /
+        required for correct operation of reveal.js,
+        even if we don't want controls
+      %aside.controls
+        %a.left{:href => "#"} &#x25c4;
+        %a.right{:href => "#"} &#x25ba;
+        %a.up{:href => "#"} &#x25b2;
+        %a.down{:href => "#"} &#x25bc;
+
+    %script{:src => "reveal/js/reveal.min.js"}
+    %script{:src => "highlight/build/highlight.pack.js"}
+    :javascript
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        mouseWheel: false,
+        rollingLinks: false,
+      });
+      hljs.initHighlightingOnLoad();
