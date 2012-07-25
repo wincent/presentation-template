@@ -3,22 +3,28 @@
   %head
     %meta{:charset => "utf-8"}/
     %title Presentation title
-    %meta{:content => "Greg Hurrell", :name => "author"}/
+    %meta{:content => "Causes Engineering", :name => "author"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "reveal/css/reset.css", :rel => "stylesheet"}/
     %link{:href => "reveal/css/main.css", :rel => "stylesheet"}/
     %link{:href => "highlight/src/styles/solarized_dark.css", :rel => "stylesheet"}/
+    %link{:href => "causes.css", :rel => "stylesheet"}/
     / overrides for default reveal styles
     :css
       #reveal pre {
         font-size: 24px;
       }
-  %body
+  %body#causes
     .reveal
       .slides
 
         %section
           %h1 Presentation title
+          %br
+          %h5 presented by
+          %h4 Presenter
+          %img.logo{:src => 'assets/causes_logo.png'}
+
 
         %section
           %h2 Slide title

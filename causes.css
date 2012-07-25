@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('assets/gotham_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#causes {
+  background: #1f3d5f;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(31,61,95,1) 0%, rgba(28,30,32,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(31,61,95,1)), color-stop(100%,rgba(28,30,32,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(31,61,95,1) 0%,rgba(28,30,32,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(31,61,95,1) 0%,rgba(28,30,32,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(31,61,95,1) 0%,rgba(28,30,32,1) 100%);
+  background: radial-gradient(center, ellipse cover,  rgba(31,61,95,1) 0%,rgba(28,30,32,1) 100%);
+}
+
+#causes .reveal h1,
+#causes .reveal h2,
+#causes .reveal h3,
+#causes .reveal h4,
+#causes .reveal h5 {
+  margin: 0 0 20px;
+  color: #eee;
+  font-family: 'Gotham Bold', sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+#causes .reveal h1 {
+  text-shadow: none;
+  font-size: 99px;
+}
+
+#causes .reveal h5 {
+  font-size: 27px;
+}
+
+#causes .reveal ul {
+  list-style-image: url('assets/plus.png');
+}
+
+#causes .reveal section img.logo {
+  border: none;
+  background-color: inherit;
+  width: 150px;
+}
