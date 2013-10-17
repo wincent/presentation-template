@@ -1,28 +1,20 @@
-@font-face {
-  font-family: 'Gotham Bold';
-  src: url('assets/gotham_bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Book';
-  src: url('assets/gotham_book.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 #causes {
-  font-family: 'Gotham Book';
+  background: #f8f8f8;
+  color: #515151;
+  font-family: 'Montserrat', sans-serif;
   font-size: 33px;
-  background: #1f3d5f;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(52,97,124,1) 0%, rgba(28,30,32,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(52,97,124,1)), color-stop(100%,rgba(28,30,32,1)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(52,97,124,1) 0%,rgba(28,30,32,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(52,97,124,1) 0%,rgba(28,30,32,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(52,97,124,1) 0%,rgba(28,30,32,1) 100%);
-  background: radial-gradient(center, ellipse cover, rgba(52,97,124,1) 0%,rgba(28,30,32,1) 100%);
 }
+
+#causes a {
+  color: #15b5d2;
+}
+
+#causes .reveal {
+  background-size: 100% 10px;
+  background: url(assets/causes-header.png);
+  height: 10px;
+}
+
 #causes .reveal .slides {
   text-align: left;
 }
@@ -35,35 +27,37 @@
 #causes .reveal h3,
 #causes .reveal h4,
 #causes .reveal h5 {
+  color: #15b5d2;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .02em;
+  line-height: .93em;
   margin: 0 0 20px;
-  color: #eee;
-  font-family: 'Gotham Bold', sans-serif;
-  line-height: 0.93em;
-  letter-spacing: 0.02em;
-  text-shadow: none;
-  text-transform: uppercase;
   text-align: left;
+  text-shadow: none;
+  text-transform: none;
 }
 
 #causes .reveal h1 {
-  text-shadow: none;
   font-size: 99px;
+  text-shadow: none;
 }
 
 #causes .reveal .slides h5 {
   font-size: 24px;
   margin-bottom: 8px;
-  font-family: 'Gotham Book';
 }
 
 #causes .reveal ul {
-  list-style-image: url('assets/plus.png');
-  width: 837;
   margin-left: 63px;
 }
 
 #causes .reveal section img.logo {
-  border: none;
   background-color: inherit;
-  width: 150px;
+  border: 0;
+  bottom: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: fixed;
+  width: 200px;
 }
