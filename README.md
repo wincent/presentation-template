@@ -1,3 +1,5 @@
+# Deprecated: please see [https://github.com/wincent/presentation](github.com/wincent/presentation) instead
+
 Basic starting point for quick-and-dirty technical presentations.
 
 ## Includes:
